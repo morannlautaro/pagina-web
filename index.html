@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next-step-zapatillas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.3.5-dist/css/bootstrap.min.css">
+
+</head>
+<body>
+  <script src="archivo.js"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+        </div>
+      </nav>
+      <div class="container">
+        <a class="navbar-brand" href="#" class="titulo">ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤNEXT STEP ZAPATILLAS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+              </li>
+            <li class="nav-item"><a class="nav-link" href="#mas_vendido">Más vendido</a></li> <!-- href es para que busque en el documento un id para dirigirse -->
+            <li class="nav-item"><a class="nav-link" href="#Preguntas">Preguntas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#Contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> <!-- dat bs ride hace que cambie automáticamente -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="IMAGENES/zapatilla adida mejorada.jpg" class="d-block w-100" alt="Moda 1" height="1250px" width="50px">
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGENES/otra adidas.jpeg" class="d-block w-100" alt="Moda 2"  height="1250px" width="50px">
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGENES/puma.jpeg" class="d-block w-100" alt="Moda 3" height="1250px" width="50px">
+      </div>
+      <div class="carousel-item">
+        <img src="IMAGENES/asics.jpeg" class="d-block w-100" alt="Moda 4" height="1250px" width="50px">
+      </div>
+    </div>
+    
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span> <!-- para volver hacia atras -->    
+    </button>
+
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span> <!-- para avanzar a la siguiente imagen -->
+    </button>
+
+
+  </div>
+
+     
+  <div class="TEXTO" id="mas_vendido">
+    <h3>Productos más vendidos</h3>
+    <div class="row row-cols-1 row-cols-md-4 g-4 mt-3">
+      <div class="col">
+        <div class="card">
+          <img src="IMAGENES/nike.jpeg" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <p class="card-text">Zapatillas Running Nike Downshifter 13 Hombre</p>
+            <p class="fw-bold">$45.000</p>
+            <button class="btn btn-primary add-to-cart" 
+                    data-nombre="Nike Downshifter 13"
+                    data-precio="45000">Añadir al carrito</button>
+          </div>  
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="IMAGENES/puma 2.jpeg" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <p class="card-text">Zapatillas Running Puma Skyrocket Lite</p>
+            <p class="fw-bold">$60.000</p>
+            <button class="btn btn-primary add-to-cart" 
+                    data-nombre="Puma Skyrocket Lite"
+                    data-precio="60000">Añadir al carrito</button>
+          
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="IMAGENES/adidas response.jpeg" class="card-img-top" alt="Producto">
+          <div class="card-body">
+            <p class="card-text">Adidas response</p>
+            <p class="fw-bold">$55.000</p>
+            <button class="btn btn-primary add-to-cart" 
+                    data-nombre="Adidas response"
+                    data-precio="55000">Añadir al carrito</button><!-- btn primary, lo encontré en bootstrap, es el boton de añadir al carrito -->
+          </div>
+        </div>
+      </div>
+      <div class="col" id="producto4">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+          <div class="card-body"><p class="card-text">Producto 4</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Preguntas" class="bg-dark text-white py-5">
+    <div class="container">
+      <h4 class="text-center mb-4">Sección de Preguntas Frecuentes</h4>
+      <div class="accordion" id="faqAccordion"> <!-- accordion sirve para que cada pregunta tenga su respuesta relacionada -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#faq1">¿Cuánto tiempo tarda en llegar el producto?</button></h2>
+          <div id="faq1" class="accordion-collapse collapse show">
+            <div class="accordion-body">Puede demorar entre una y dos semanas luego de hacer el pedido.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq2">¿Cuáles son los métodos de pago?</button></h2>
+          <div id="faq2" class="accordion-collapse collapse">
+            <div class="accordion-body">Aceptamos tarjetas de crédito, débito y transferencias bancarias.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq3">¿Hacen envíos a todo el país?</button></h2>
+          <div id="faq3" class="accordion-collapse collapse">
+            <div class="accordion-body">Sí, realizamos envíos a todo el territorio nacional.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq4">¿Puedo cambiar o devolver un producto?</button></h2>
+          <div id="faq4" class="accordion-collapse collapse">
+            <div class="accordion-body">Sí, tienes hasta 10 días para cambios o devoluciones con ticket de compra.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="Contacto"></div>
+      <footer class="bg-secondary text-white text-center py-4">
+      <p>Síguenos en nuestras redes sociales</p>
+      <p>
+      <a href="#" class="text-white mx-2">Facebook</a> |
+      <a href="#https://www.instagram.com/next_step.zapatillas/" class="text-white mx-2">Instagram</a> |
+      <a href="#" class="text-white mx-2">WhatsApp</a>
+      </p>
+      <p>Email: contacto@tiendademoda.com | Tel: +54 11 1234-5678</p>
+  </footer>
+
+  <div class="container text-center py-5">
+   
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="archivo.js"></script>
+ 
+  <div class="modal fade" id="carritoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="carrito-items"></tbody>
+        </table>
+        <h5 class="text-end">Total: $<span id="carrito-total">0</span></h5>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success">Finalizar compra</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+  
+</html>
+

@@ -1,0 +1,17 @@
+.carousel-control-prev-icon{
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+.carousel-control-next-icon{
+    background-color: rgb(0, 0, 0);
+    border-radius: 100%;
+}
+.YAGUARETE{
+    border-radius: 100%;
+}
+.TEXTO{
+    text-align: center;
+}
+.titulo{
+    position: absolute;
+}
